@@ -3,15 +3,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Coworking,business">
+	<meta name="viewport" content="width=device-width" />
 
-	<title> Coworking </title>
+	<title> A2 Coworking </title>
 
-	<link rel="shortcut icon" type="image/x-icon" href="/images/a2.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jhmachado.github.io/a2coworking/images/a2.ico" />
 	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="plugins/icofont/icofont.min.css">
-	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 </head>
 
 <body id="top">
@@ -31,7 +31,11 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html"> Home </a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="service.html"> Galeria  </a></li>
+					<li class="nav-item">
+						<a class="nav-link" onclick="openGallery()" href="javascript:void(0)">
+							Galeria
+						</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="mailto:contato@a2coworking.com.br">
 							Contato
@@ -88,6 +92,33 @@
 		</div>
 	</section>
 
+	<!-- <section id="gallery" class="section hidden" id="gallery">
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-1.jpeg" alt="Foto 1">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-2.jpeg" alt="Foto 2">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-3.jpeg" alt="Foto 3">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-4.jpeg" alt="Foto 4">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-5.jpeg" alt="Foto 5">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-6.jpeg" alt="Foto 6">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-7.jpeg" alt="Foto 7">
+		</div>
+		<div data-fancybox="gallery">
+			<img src="images/fotos/foto-8.jpeg" alt="Foto 8">
+		</div>
+	</section> -->
+
 	<footer class="footer gray-bg">
 		<div class="container">
 			<div class="row">
@@ -127,7 +158,45 @@
 	<script src="plugins/jquery/jquery.js"></script>
 	<script src="plugins/bootstrap/js/popper.js"></script>
 	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      	function openGallery() {
+		 	Fancybox.show([
+				{
+					src: "images/fotos/foto-1.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-2.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-3.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-4.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-5.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-6.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-7.jpeg",
+					type: "image",
+				},
+				{
+					src: "images/fotos/foto-8.jpeg",
+					type: "image",
+				},
+			]);
+		}
+    </script>
   </body>
   </html>
    
