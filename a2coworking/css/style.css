@@ -73,6 +73,12 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   border: 1px solid #223a66;
 }
 
+.where-we-are iframe {
+  border: 0;
+  width: 100%;
+  height: 400px;
+}
+
 .py-7 {
   padding: 7rem 0px;
 }
